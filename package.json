@@ -3,7 +3,7 @@
   "description": "A test-driven assessment of JavaScript skills",
   "private": true,
   "engines": {
-    "node": "0.12.x"
+    "node": "10.x"
   },
   "dependencies": {
     "backbone": "^1.1.2",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha -R spec 'tests/app'",
+    "test": "mocha -R spec tests/app/*.js",
     "lint": "eslint --quiet tests/app app",
     "lint-warn": "eslint tests/app app"
   },

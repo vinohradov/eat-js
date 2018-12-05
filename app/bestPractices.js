@@ -9,11 +9,9 @@ exports = typeof window === 'undefined' ? global : window;
 
 exports.bestPracticesAnswers = {
   globals: function() {
-    const myObject = {
+    return {
       name: 'Jory'
     };
-
-    return myObject;
   },
 
   parseInt: function(num) {
